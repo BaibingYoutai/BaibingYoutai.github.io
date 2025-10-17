@@ -57,7 +57,6 @@
       margin-left: 15px;
       margin-right: 15px;
       margin-top: 15px;
-      height: 30%;
       box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
     }
     .forum_tag{
@@ -66,8 +65,8 @@
       margin-left: 15px;
       margin-right: 15px;
       margin-top: 15px;
-      height:30%;
       box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+      /*background: yellow;*/
     }
    </style>
    <title>我的第一个网页</title>
@@ -81,18 +80,38 @@
       <p class="daohang">新闻</p>
     </div>
     
-    <div class="forum_tag">
-      <p class="daohang">投票</p>
+    <div class="forum_tag" id="id_vote" onclick="vote()">
+      <p class="daohang" id="id_vote_txt">投票</p>
     </div>
   </div>
   
-  <div class="div1">
-    <p class="diantou">八十一报社10月15日电</p>
-    <p class="newstext">今日，刘某同学早自习语文默写公然作弊，引起众人公愤。</p>  
-  </div>  
-  <div class="div1">
-    <p class="diantou">八十一报社10月16日电</p>
-    <p class="newstext">今日，四名初二学生在男厕所翻墙偷窥同学顾某上厕所，该行为不仅违反厕所的使用条约，跟人类共同幼小的心理造成了巨大的损伤。我方记者到达现场时，四名男生正在教师办公室面壁思过。哈哈哈哈太招笑了。我们仍未知晓他们的具体身份，因为作案人团队合作及其密切。我方记者持续不为您报道。</p>
+  <div id="surface">
+    <div class="div1">
+      <p class="diantou">八十一报社10月17日电</p>
+      <p class="newstext">立信附校没有什么新东西可以报道。这里天气晴朗，树木青青，门前还有儿童在打闹嬉戏。
+      </p>
+    </div>    
+    <div class="div1">
+      <p class="diantou">八十一报社10月16日电</p>
+      <p class="newstext">今日，八十一班刘某同学英语52，垃圾。
+      </p>
+    </div>
+    <div class="div1">
+      <p class="diantou">八十一报社10月16日电</p>
+      <p class="newstext">今日，四名初二学生在男厕所翻墙偷窥同学顾某上厕所，该行为不仅违反厕所的使用条约，还对人类顾某幼小的心理造成了巨大的损伤。我方记者到达现场时，四名男生正在教师办公室面壁思过。哈哈哈哈太招笑了。我们仍未知晓他们的具体身份，因为作案人团队合作极其密切。我方记者持续不为您报道。
+      </p>
+    </div>
+    <div class="div1">
+      <p class="diantou">八十一报社10月15日电</p>
+      <p class="newstext">今日，刘某同学早自习语文默写公然作弊，引起众人公愤。</p>  
+    </div>      
   </div>
+  
+  <script>
+    function vote(){
+      document.getElementById("id_vote").style.background = "#A8325A";
+      document.getElementById("id_vote_txt").style.color = "white";
+    }
+  </script>
 </body>
 </html>
