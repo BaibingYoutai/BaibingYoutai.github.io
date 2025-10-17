@@ -4,6 +4,7 @@
 <head>
    <meta charset="utf-8">   
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>立信附校八十一新闻网</title>
    <style>
    .header1{
     background: linear-gradient(135deg, #32F5 0%, #32F5 100%);  
@@ -76,8 +77,8 @@
     <h2 class="h2">立信附校八十一新闻网</h2>
   </header>
   <div class="flex-container">
-    <div class="news_tag">
-      <p class="daohang">新闻</p>
+    <div class="news_tag" id="id_news" onclick="news()">
+      <p class="daohang" id="id_news_txt">新闻</p>
     </div>
     
     <div class="forum_tag" id="id_vote" onclick="vote()">
@@ -109,8 +110,18 @@
   
   <script>
     function vote(){
+      document.getElementById("id_news").style.background = "white";
+      document.getElementById("id_news_txt").style.color = "black";
       document.getElementById("id_vote").style.background = "#A8325A";
       document.getElementById("id_vote_txt").style.color = "white";
+      alert("前方的道路以后再来探索吧～");
+    }
+    function news(){
+      document.getElementById("id_vote").style.background = "white";
+      document.getElementById("id_vote_txt").style.color = "black";          
+      document.getElementById("id_news").style.background = "#A8325A";
+      document.getElementById("id_news_txt").style.color = "white";
+  
     }
   </script>
 </body>
