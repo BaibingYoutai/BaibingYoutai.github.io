@@ -5,26 +5,7 @@
    <meta charset="utf-8">   
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>立信附校八十一新闻网</title>
-  <script>
-    function sleep(ms){
-      return new Promise(resolve => setTimeout(resolve, ms));
-    }
-    function vote(){
-      document.getElementById("id_news").style.background = "white";
-      document.getElementById("id_news_txt").style.color = "black";
-      document.getElementById("id_vote").style.background = "#cecece";
-      sleep(70).then(() => { document.getElementById("id_vote").style.background = "#A8325A"; });
-      document.getElementById("id_vote_txt").style.color = "white";
-      alert("前方的道路以后再来探索吧～");
-    }
-    function news(){
-      document.getElementById("id_vote").style.background = "white";
-      document.getElementById("id_vote_txt").style.color = "black";
-      document.getElementById("id_news").style.background = "#cecece";
-      sleep(70).then(() => { document.getElementById("id_news").style.background = "#A8325A"; });
-      document.getElementById("id_news_txt").style.color = "white";
-    }
-  </script>   
+
    <style>
    .header1{
     background: linear-gradient(135deg, #32F5 0%, #32F5 100%);  
@@ -107,6 +88,11 @@
   </div>
   
   <div id="surface">
+    <div class="div1">
+      <p class="diantou">八十一报社10月25日电</p>
+      <p class="newstext"><strong>体育测试中公然欺诈，究竟是人性的扭曲还是道德的沦丧！</strong><br>昨日，八十一班进行了800&1000米长跑测试，测试中部分同学被套圈后临阵不乱，用精湛的演技对老师实行了“欺诈”。我方记者采访了两名目击证人，双方表示，汤某、王某及卫某只跑了三圈，却谎称自己跑完了全程。对此，我方记者表示，（具体表示内容自己翻道法书讲诚信的章节吧，我道法书放学校里了抄不了）。究竟是真的公然欺诈还是受到冤枉？我方记者持续不为您报道。
+      </p>
+    </div>
     
     <div class="div1">
       <p class="diantou">八十一报社10月19日电</p>
@@ -150,6 +136,26 @@
     </div>      
   </div>
   
+  <script>
+    function sleep(ms){
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    function vote(){
+      document.getElementById("id_news").style.background = "white";
+      document.getElementById("id_news_txt").style.color = "black";
+      document.getElementById("id_vote").style.background = "#cecece";
+      sleep(70).then(() => { document.getElementById("id_vote").style.background = "#A8325A"; });
+      document.getElementById("id_vote_txt").style.color = "white";
+      alert("前方的道路以后再来探索吧～");
+    }
+    function news(){
+      document.getElementById("id_vote").style.background = "white";
+      document.getElementById("id_vote_txt").style.color = "black";
+      document.getElementById("id_news").style.background = "#cecece";
+      sleep(70).then(() => { document.getElementById("id_news").style.background = "#A8325A"; });
+      document.getElementById("id_news_txt").style.color = "white";
+    }
+  </script>     
 
 </body>
 </html>
